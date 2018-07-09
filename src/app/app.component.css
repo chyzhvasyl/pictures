@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu');
+
 .hero-unit{
-  border-radius: 20px;
   text-align: justify;
   height: auto;
-  padding: 1em 5%;
-  background: #2c3e50;
-  color: #fff;
+
+  width: 100%;
+  font-size: 300%;
+  font-family: 'Gaegu', cursive;
+  color: burlywood;
 }
 

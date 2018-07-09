@@ -1,5 +1,5 @@
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
-<div class=" container">
+
 <app-search [(userName)]="name">
 </app-search>
 <br>
@@ -9,7 +9,8 @@
   <div class="col-md-3" *ngFor="let image of images.slice(0,4); let i = index;"   >
     <div>
       <div>
-      {{i+1}}  <img  src="{{  image.url   }}"   >
+      {{i+1 + ')'}} <br>
+        <img  src="{{  image.url   }}"   >
       </div>
     </div>
   </div>
@@ -17,10 +18,10 @@
 
 <div   [@slideIn]  class="row" *ngIf = "name === 'good vibes'">
   <div     class="col-md-3"   *ngFor="let image of images.slice(4,8); let i = index;  ">
-    {{i+1}}<img  src="{{  image.url   }}"   >
+    {{i+1 + ')'}}<img  src="{{  image.url   }}"  class="img-fluid" alt="Responsive image" >
 
   </div>
-</div></div>
+</div>
 <!--
 
 <div   [style.display] = " name !=='good mood'?'none' : 'none' ">
